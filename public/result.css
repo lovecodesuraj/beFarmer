@@ -1,0 +1,101 @@
+.result{
+    height: 90vh;
+    background-color:#F7D047;
+    width: 100vw;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.style{
+    width: 30vw;
+    height: 40vh;
+    display: inline-block;
+    /* margin-top:100px ; */
+}
+.style img{
+    height: 100%;
+    margin-left: 180px;
+}
+.suggestedCrops{
+    display: inline;
+float: right;
+    padding: 40px;
+    width: 60vw;
+    height: 40vh;
+    border-radius: 10px;
+    background-color: #ffab66;
+    /* margin-top: 100px; */
+    margin-right: 20px;
+    overflow-y: scroll;
+}
+.suggestedCrops .heading{
+    width: 100%;
+    color: #fff;
+
+}
+.suggestedCrops .suggestion button{
+   min-width: 120px;
+   min-height: 30px;
+    margin: 7px;
+    color: black;
+    padding: 3px 10px;
+    border-radius: 10px;
+    border-width: 0;
+    background-color:#F7D047;
+}
+.suggestedCrops .suggestion button:hover{
+    /* border: 2px solid white ; */
+    color:white;
+}
+
+@media only screen and (max-width:480px){
+
+    .result{
+        
+        
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+   
+    }
+    .style{
+
+        margin-top: 50px;
+        width: 100vw;
+        height: 30vh;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin-bottom: 20px;
+         
+    }
+    .style img{
+        height: 100%;
+        margin: 0;
+        
+    }
+    .suggestedCrops{
+        display: block;
+    float:none;
+        padding: 40px;
+        width: 100%;
+        height: 40vh;
+
+    }
+    .suggestedCrops .heading{
+        width: 100%;
+        color: #fff;
+    
+    }
+    .suggestedCrops .suggestion button{
+       min-width: 120px;
+       min-height: 30px;
+        margin: 7px;
+        color: black;
+        padding: 3px 10px;
+        border-radius: 10px;
+        border-width: 0;
+        background-color:#F7D047;
+    }
+
+}

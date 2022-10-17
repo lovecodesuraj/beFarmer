@@ -1,0 +1,18 @@
+<%- include("../partials/header") -%>
+<div class="result">
+    <div class="style">
+      <img src="https://www.pngall.com/wp-content/uploads/2017/11/Farmer-Download-PNG.png" alt="">
+    </div>
+    <div class="suggestedCrops">
+        <h3 class="heading">Suggested Crops</h3>
+           <div class="suggestion">
+            <%for(var i=0;i<result.length;i++){%>
+                <button ><%=result[i].name%></button>
+            <%}%>
+           </div>
+    </div>
+</div>
+
+
+
+<%- include("../partials/footer") -%>
